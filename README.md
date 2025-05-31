@@ -3,24 +3,69 @@
 ## Overview
 This project implements an advanced Ambulance Management System designed to efficiently handle emergency medical services in Egypt. The system manages hospitals, ambulances, and patient cases through an intelligent dispatching system using various data structures and algorithms.
 
+## Patient Types and Ambulance Matching
+The system handles three types of patients with specific ambulance matching rules:
+
+### Patient Categories
+1. **Emergency Patients (EP)**
+   - Highest priority cases
+   - Can ONLY be assigned to Emergency Cars (SC - Special Cars)
+   - Require immediate medical attention
+   - Automatically matched to nearest available emergency vehicle
+
+2. **Special Patients (SP)**
+   - Medium priority cases
+   - Flexible assignment - can be matched with either:
+     * Special Cars (SC)
+     * Normal Cars (NC)
+   - Assignment based on availability and proximity
+
+3. **Normal Patients (NP)**
+   - Regular priority cases
+   - Can ONLY be assigned to Normal Cars (NC)
+   - Handled based on standard protocols
+
+### Ambulance Types
+1. **Special Cars (SC)**
+   - Equipped for emergency situations
+   - Primary assignment to Emergency Patients
+   - Can handle Special Patients when available
+   - Advanced medical equipment and trained staff
+
+2. **Normal Cars (NC)**
+   - Standard medical transport
+   - Handles Normal Patients
+   - Can transport Special Patients when needed
+   - Basic medical equipment and standard staff
+
+### Assignment Rules
+- Emergency Patients ↔ Special Cars (Exclusive)
+- Special Patients ↔ Both Car Types (Flexible)
+- Normal Patients ↔ Normal Cars (Exclusive)
+
+### Hospital Assignment
+After patient-ambulance matching, the system:
+1. Calculates distances to all available hospitals using latitude and longitude coordinates
+2. Selects the nearest hospital with available capacity
+3. Routes the ambulance to the selected hospital
+4. Updates hospital capacity and ambulance status
+
 ## Project Structure
 ```
 ├── Ambulance/          # Ambulance-related implementations
+│   ├── Car.h          # Base ambulance class
+│   ├── NC.h           # Normal Car implementation
+│   └── SC.h           # Special Car implementation
 ├── Hospital/           # Hospital management components
-├── Organizer/          # Core organization and simulation logic
-├── Patient/            # Patient-related classes and handling
-├── UI/                 # User Interface components
-├── DerivedClasses/     # Extended class implementations
-├── 1-Stacks/          # Stack data structure implementations
-├── 3-Queues/          # Queue data structure implementations
-├── 5-PriorityQueue/   # Priority Queue implementations
+├── Patient/           # Patient-related classes
+│   ├── Patient.h      # Base patient class
+│   ├── EP.h           # Emergency Patient implementation
+│   ├── SP.h           # Special Patient implementation
+│   └── NP.h           # Normal Patient implementation
+├── Organizer/         # Core organization and simulation logic
+├── UI/                # User Interface components
 └── Data Files
-    ├── Egypt.txt              # Main simulation data for Egypt regions
-    ├── moderate_failure.txt   # Moderate failure scenario test data
-    ├── high_failure.txt       # High failure scenario test data
-    ├── large_distance.txt     # Large distance scenario test data
-    ├── all_ep_scenario.txt    # All emergency protocols test data
-    └── stress.txt            # System stress test data
+    └── Egypt.txt      # Main simulation data with coordinates
 ```
 
 ## Features
@@ -38,6 +83,7 @@ The system is implemented in C++ and utilizes various data structures:
 - Queues for handling patient waiting lists and ambulance dispatch
 - Stacks for managing historical data and operation logs
 - Custom classes for Hospitals, Ambulances, and Patients with inheritance hierarchy
+- Geographic coordinate system for location-based assignments
 
 ## Getting Started
 
@@ -74,25 +120,26 @@ The system accepts text files with the following format:
 ### Hospital Data Section:
 ```
 [Hospital Data]
-ID Location Capacity Status
-H1 30,40    50      Active
-H2 60,70    30      Active
+ID Location(lat,long) Capacity Status
+H1 30.40,31.25       50      Active
+H2 30.50,31.30       30      Active
 ```
 
 ### Ambulance Data Section:
 ```
 [Ambulance Data]
-ID Status    Location
-A1 Available 35,45
-A2 Busy      55,65
+ID Type Location(lat,long) Status
+A1 SC   30.45,31.20      Available
+A2 NC   30.55,31.15      Available
 ```
 
 ### Patient Data Section:
 ```
 [Patient Data]
-ID Priority Location Condition
-P1 High     25,35    Critical
-P2 Medium   45,55    Stable
+ID Type Priority Location(lat,long) Condition
+P1 EP   High     30.35,31.22       Critical
+P2 SP   Medium   30.45,31.18       Stable
+P3 NP   Low      30.50,31.25       Stable
 ```
 
 ## Testing Scenarios
@@ -111,6 +158,8 @@ The system implements robust error handling for:
 - Runtime exceptions and system failures
 - Network and communication errors
 - Invalid user input and boundary conditions
+- Geographic coordinate validation
+- Patient-Ambulance type mismatch prevention
 
 ## Contributing
 Contributions are welcome! Please follow these steps:
