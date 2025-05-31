@@ -1,3 +1,122 @@
+# Hi there, I'm Hassan Ahmed Rashwan 👋
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hassan-ahmed-rashwan)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ahito498)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hassan63ahmed12@gmail.com)
+
+## 🚀 Communication and Information Engineering Student | Software Developer
+
+### 👨‍💻 Professional Summary
+Motivated and fast-learning Communication and Information Engineering student at Zewail City of Science, Technology, and Innovation, with strong problem-solving skills and a passion for software development. Proficient in both individual and team-based environments, with hands-on experience in full-stack development using ASP.NET and back-end development using Django. Currently expanding knowledge in Machine Learning and Artificial Intelligence alongside software engineering.
+
+### 🎓 Education
+- **B.Sc. in Communication and Information Engineering** (Expected 2027)
+  - Zewail City of Science, Technology, and Innovation
+  - Giza, Egypt
+
+### 💻 Technical Skills
+
+#### Programming Languages
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+#### Tools & Technologies
+- **Development Tools:**
+  - SystemVerilog
+  - ASP.NET
+  - Django
+  - MSSQL
+  - Docker
+  - Git & GitHub
+
+#### Core Competencies
+- 💡 Data Structures & Algorithms
+- 🗄️ Database Design & SQL
+- ⚡ Circuits & Electronics
+- 🔧 System Design
+- 🧮 Object-Oriented Programming
+
+### 🛠️ Projects
+
+#### 🚑 Ambulance Management System Simulation — C++, OOP
+- Simulated real-life ambulance dispatch operations
+- Implemented efficient resource allocation algorithms
+- Utilized advanced data structures for optimal performance
+- Demonstrated strong problem-solving and system design skills
+
+#### 🏢 Room Booking System — Full Stack-ASP.NET
+- Designed and implemented a comprehensive booking management system
+- Built with ASP.NET framework for robust performance
+- Implemented full-stack functionality with clean architecture
+- Managed room booking and cleaning request workflows
+
+#### 💻 Shape Studio Project — C++, OOP
+- Developed a GUI-based application for shape manipulation
+- Implemented core Object-Oriented Programming principles
+- Created an intuitive and interactive user interface
+- Demonstrated strong software design patterns
+
+#### 🗄️ Database Platform — SQL
+- Created a comprehensive database management system
+- Implemented efficient request handling mechanisms
+- Designed optimized data structures and relationships
+- Utilized SQL for complex data operations
+
+#### 🔌 Hardware Projects
+- **IR Proximity Sensor** — Circuits Project
+  - Designed and built a proximity sensor for object detection
+  - Implemented sensor calibration and testing
+  - Applied electronic design principles
+
+- **Audio Amplifier** — Electronics Project
+  - Created an audio amplification circuit
+  - Applied electronic design principles
+  - Implemented signal processing techniques
+
+### 🏆 Competitions & Achievements
+- **NASA Space Apps Cairo** (2024)
+  - Participated in global space technology challenge
+  - Worked on innovative space-related solutions
+
+- **PACE Competition - EUROAVIA** (2024)
+  - Engaged in international engineering competition
+  - Developed technical and teamwork skills
+
+### 📊 GitHub Stats
+
+<a href="https://github.com/Ahito498">
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=Ahito498&show_icons=true&theme=dark" />
+</a>
+<a href="https://github.com/Ahito498">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ahito498&layout=compact&theme=dark" />
+</a>
+
+### 🌱 Current Focus
+- Machine Learning & AI Development
+- Full-stack Web Development
+- Hardware Design & Implementation
+- System Architecture & Design Patterns
+- Advanced Algorithm Implementation
+
+### 🗣️ Languages
+- English: B2-C1 Level (Professional Working Proficiency)
+- Arabic: Native
+
+### 📫 Contact Information
+- 📱 Phone: 01557502557 / 01014437440
+- 📧 Email: hassan63ahmed12@gmail.com
+- 💼 LinkedIn: [Hassan Ahmed Rashwan](https://www.linkedin.com/in/hassan-ahmed-rashwan)
+- 🌍 Location: Cairo, Egypt
+
+---
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Ahito498&color=blue&style=flat-square&label=Profile+Views" alt="Profile views" />
+</p>
+
+⭐️ From [Ahito498](https://github.com/Ahito498)
+
 # Ambulance Management System
 
 ## Overview
